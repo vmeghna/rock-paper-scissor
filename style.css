@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --clr-rich-black: #001524ff;
+  --clr-caribbean-current: #15616dff;
+  --clr-papaya-whip: #ffecd1ff;
+  --clr-orange-wheel: #ff7d00ff;
+  --clr-sienna: #78290fff;
+}
+html {
+  font-size: 16px;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #08aeea;
+  background-image: linear-gradient(0deg, #08aeea 0%, #2af598 100%);
+  overflow: hidden;
+  background-repeat: no-repeat;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  height: 100vh;
+}
+.container {
+  background-color: #fff;
+  padding: 1.5rem;
+  width: 26rem;
+  min-height: 22rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.info-container {
+  min-height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.title {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.score-text {
+  font-size: 1.2rem;
+}
+.score {
+  font-weight: 800;
+}
+.weapons-container {
+  min-height: 9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn-weapons {
+  height: 6.5rem;
+  width: 6.5rem;
+  padding: 1rem;
+  border-radius: 50%;
+  font-size: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: var(--clr-orange-wheel);
+  color: var(--clr-rich-black);
+  cursor: pointer;
+}
+.result-container {
+  min-height: 5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.2rem;
+  display: none;
+}
+.result {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.won {
+  background-color: var(--clr-orange-wheel);
+
+  color: var(--clr-rich-black);
+}
+.game-result {
+  width: 8rem;
+  padding: 1rem;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+.draw {
+  background-color: var(--clr-sienna);
+  color: var(--clr-papaya-whip);
+}
+.lost {
+  background-color: var(--clr-rich-black);
+  color: var(--clr-papaya-whip);
+}
+@media screen and (max-width: 420px) {
+  .container {
+    background-color: #fff;
+    padding: 1.5rem;
+    width: 20rem;
+    min-height: 13rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+  .weapons-container {
+    min-height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .btn-weapons {
+    height: 4.5rem;
+    width: 4.5rem;
+    padding: 1rem;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: var(--clr-orange-wheel);
+    color: var(--clr-rich-black);
+    cursor: pointer;
+  }
+}
